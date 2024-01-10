@@ -1,9 +1,8 @@
 export class SummarizeConversation {
     static id = "2DUFX4A3fmPv";
+    static description = "Makes a summary of the conversation between you and a personality";
 
     constructor() {
-        this.name = "SummarizeConversation";
-        this.description = "Makes a summary of the conversation between you and a personality";
     }
 
     start(replyHistory) {
