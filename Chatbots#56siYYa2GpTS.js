@@ -1,9 +1,8 @@
 export class Chatbots {
     static id = "56siYYa2GpTS";
-
+    static description = "Provides an answer using a personality";
     constructor() {
-        this.name = "Chatbots";
-        this.description = "Provides an answer using a personality";
+
     }
 
     start(prompt, personalityId, replyHistory) {
