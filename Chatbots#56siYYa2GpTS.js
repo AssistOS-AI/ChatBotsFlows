@@ -6,7 +6,7 @@ export class Chatbots {
     }
 
     async start(chatbot, conversation, prompt, emotion, personalityId, replyHistory) {
-        let personality = webSkel.currentUser.space.getPersonality(personalityId);
+        let personality = system.space.getPersonality(personalityId);
         let systemMessage = `Step into the shoes of ${personality.name}, a character known for their distinctive traits: ${personality.description}. Your mission is to respond to the replies of the user while emanating an emotion that naturally aligns with the replies and encapsulates the distinct essence of this character. Please answer in the same language as the given replies. Please only use emojis that have faces. The response should have the following structure: {\"reply\": \"reply to the given text\", \"emotion\":{\"name\":\"name of the emotion\", \"emoji\":\"emoji of the emotion\"}}`;
         this.prompt = prompt;
         if(!conversation.isInstructed){
