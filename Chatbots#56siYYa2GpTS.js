@@ -1,13 +1,6 @@
 export class Chatbots{
     static id = "56siYYa2GpTS"
     static description = "Provides an answer using a personality"
-    static inputSchema= {
-        chatbotObj: "object",
-        conversation: "object",
-        userPrompt: "string",
-        emotion: "object",
-        replyHistory: "object"
-    }
     static outputSchema = {
         reply: "string",
         emotion: {
